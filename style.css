@@ -1,0 +1,130 @@
+body{
+    margin: auto;
+    background-color: rgb(39, 38, 38);
+}
+nav{
+
+margin-top: 20px;
+padding-top: 10%;
+
+height: 30%;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav a:hover{
+  background-color: rgba(255, 193, 7, 0.1); 
+border-radius: 5%;
+text-shadow: rgb(7, 8, 8);
+
+
+
+}
+.back{
+
+background-image: url("hero back.jpg");
+background-attachment:fixed;
+
+}
+.nav-link {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffc107; /* Bootstrap's warning color */
+  transform: translateY(-2px);
+}
+.btn {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  /* background-color: rgba(255, 193, 7, 0.1);  */
+  transform: scale(1.05);
+}
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animated-photo {
+  animation: fadeInScale 1s ease-out forwards;
+}
+.animated-photo:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(255, 193, 7, 0.5);
+  transition: all 0.3s ease;
+}
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+}
+
+.animated-photo {
+  animation: pulse 2s infinite;
+}
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-animate {
+  animation: fadeUp 0.8s ease-out forwards;
+  opacity: 0; 
+}
+.card-animate {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-animate:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(255, 193, 7, 0.3); 
+}
+.card-animate:hover {
+  transform: translateY(-10px) scale(1.03);
+}
+.project-img {
+  height: 400px;      
+  object-fit: cover;  
+  border-radius: 10px; 
+}
+
+
+
+
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
+  padding: 20px 0;
+}
+
+.social-icons a {
+  font-size: 30px;
+  color: #ffffff; 
+  transition: transform 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #ffc107;
+  transform: scale(1.2) rotate(5deg);
+}
+
+
+
